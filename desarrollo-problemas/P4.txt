@@ -1,0 +1,29 @@
+Problema4
+//Generar una miniespecificación que permita ingresar 4 estudiantes;
+ //por cada uno de ellos ingresar el nombre del estudiante, 
+//el promedio de ciclo. Presentar el siguiente reporte
+//Estudiante 1 	10 	Aprobado
+//Estudiante 2 	6.9 	Reprobado
+//Estudiante 3 	7 	Aprobado
+//Estudiante 4 	5 	Reprobado
+
+
+1.  Inicio
+
+2.  contador, i[0,n] <-- 1
+3.  nombre, x(200)[{1-9},{a-z},{A-Z}, {/} ,{ BS}]
+5.  promedio, d[0,n]
+
+7.  Mientras contador <= 4 entonces
+8.      Escribir "Ingrese el nombre del estudiante"
+9.      Leer nombre
+10.      Escribir "Ingrese el promedio del ciclo"
+11.      Leer promedio
+12.    si promedio >= 7 entonces
+13.   Escribir "cadenaFinal + nombre + "\t" + promedio + "\n"  "aprobado"
+14.   De lo contrario
+15.  Escribir "cadenaFinal + nombre + "\t"  + promedio + "\n" "reprobado"   
+15.      contador <-- contador + 1
+16.  Fin Mientras
+17.  Escribir cadenaFinal
+18.  Fin

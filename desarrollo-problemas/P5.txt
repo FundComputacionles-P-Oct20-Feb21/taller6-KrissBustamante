@@ -1,0 +1,79 @@
+Problema5
+
+
+//Una empresa de comercialización de computadoras realiza el proceso de venta haciendo un descuento por tipo de cliente: 
+//Si es cliente tipo 1 hay un descuento del 10% 
+//Si es cliente tipo 2 hay un descuento del 20% 
+//En caso que sea otro tipo de cliente, no hay descuento.
+//Generar un proceso que permita ingresar 7 ventas: por cada venta preguntar los siguiente datos:
+
+    //Nombre del cliente
+    //Costo de la computadora (solo se vende una computadora por transacción)
+    //Tipo de cliente
+
+//Presentar el siguiente reporte:
+
+//Cliente tipo 1, compra computadora con precio $100 y el costo final a cancelar es $90
+//Cliente tipo 1, compra computadora con precio $100 y el costo final a cancelar es $90
+//Cliente tipo 1, compra computadora con precio $100 y el costo final a cancelar es $90
+//Cliente tipo 1, compra computadora con precio $100 y el costo final a cancelar es $90
+//Cliente tipo 1, compra computadora con precio $100 y el costo final a cancelar es $90
+//Cliente tipo 1, compra computadora con precio $100 y el costo final a cancelar es $90
+//Cliente tipo 1, compra computadora con precio $100 y el costo final a cancelar es $90
+
+1.  Inicio
+2.  contador, i[0,n] <-- 1
+3.  nombre, x(200)[{1-9},{a-z},{A-Z}, {/} ,{ BS}]
+5.  costo, d[0,n]
+6.  tipo, x(200)[{1-9},{a-z},{A-Z}, {/} ,{ BS}]
+7. op, i[0,n]
+8. descuento1, d[0,n] 
+9. descuento2, d[0,n] 
+10. porcentaje1 , i[0,n] <-- 10
+11.porcentaje2 , i[0,n] <-- 20
+
+12. descuento1 <-- (costo * porcentaje1)/100
+13. descuento2 <-- (costo * porcentaje2)/100
+
+14.      Escribir "Ingrese el nombre del cliente"
+15.      Leer nombre
+16.      Escribir "Ingrese el costo de la computadora"
+17.      Leer costo
+
+18.    si contador <= 7 entonces
+
+19. Escribir "Su tipo de cliente "
+20.Escribir"Ingrese 1 para cliente tipo 1 "
+21.Escribir"Ingrese 2 para cliente tipo 2 "
+22.Escribir"Ingrese 3 para Otro tipo de cliente "
+23. Leer op
+24. Dependiendo_De(op) Haga
+25.Opcion 1
+26. costo final <-- costo-descuento1
+27.tipo <-- "Tipo 1"
+28. Fin
+29.Opcion 2
+30.costo final <-- costo-descuento2
+31.tipo <-- "Tipo 2"
+32.Fin
+33.Opcion 3
+34.costo final <-- costo
+35.tipo <-- "Otro Tipo"
+36.Fin
+37.Fin_Dependuendo_De
+38.cadenaFinal <--cadenaFinal + nombre + "\t" + tipo "\t"+"compra computadoracon presio "costo + "\t" + "y Elcosto final es:" + costo final "\n"
+39. contador <-- contador + 1
+40.  Fin Mientras
+41.  Escribir cadenaFinal
+42.  Fin
+
+
+
+
+
+
+
+
+
+
+

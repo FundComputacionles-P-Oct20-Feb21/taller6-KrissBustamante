@@ -18,4 +18,4 @@
 7.      Fin Si
 8.      contador <-- contador + 1
 9.  Fin Mientras
-10.  Inicio
+10.  Fin
